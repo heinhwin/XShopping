@@ -7,11 +7,9 @@ const HeroBanner = ({ heroBanner }) => {
   return (
     <div className="hero-banner-container">
       <div>
-        <p className="beats-solo">{heroBanner.smallText}</p>
         <h3>{heroBanner.midText}</h3>
         <h2>{heroBanner.largeText1}</h2>
-        <img src={urlFor(heroBanner.image)} alt="legacyhoodie" className="hero-banner-image" />
-
+        <img src={urlFor(heroBanner.image)} alt="legacyhoodie" className="hero-banner-image"/>
         <div>
           <Link href={`/product/${heroBanner.product}`}>
             <button type="button">{heroBanner.buttonText}</button>
